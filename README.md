@@ -82,6 +82,10 @@ A small Django project for managing tasks.
     ```bash
       python3 manage.py runserver
     ```
+9. Run the tests
+    ```bash
+      python3 manage.py test
+    ```
 
 ## Addition information
 - The website will be available at: http://127.0.0.1:8000
