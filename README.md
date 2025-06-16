@@ -75,11 +75,12 @@ A small Django project for managing tasks.
       python3 manage.py createsuperuser
     ```
 NB: You should set name, email and password for the superuser, which will be used to log in to the admin panel.
-8. Run the server
+8. To run the server
     ```bash
       python3 manage.py runserver
     ```
-9. Run the tests
+9. To stop the server, press Ctrl+C
+10. To run the tests
     ```bash
       python3 manage.py test
     ```
