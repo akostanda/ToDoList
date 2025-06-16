@@ -46,17 +46,13 @@ A small Django project for managing tasks.
      ```bash
        CREATE USER my_user WITH PASSWORD 'my_password';
      ```
-   - Grant privileges to the user
+   - Make the user the owner of the database
      ```bash
-       GRANT ALL PRIVILEGES ON DATABASE to_do_list TO my_user;
+       ALTER DATABASE to_do_list OWNER TO my_user;
      ```
    - Grant the user the privilege to create new databases
      ```bash
        ALTER ROLE my_user CREATEDB;
-     ```
-   - Grant privilege to the schema
-     ```bash
-       GRANT ALL PRIVILEGES ON SCHEMA public TO my_user;
      ```
    - Exit the PostgreSQL console
      ```bash
@@ -78,6 +74,7 @@ A small Django project for managing tasks.
     ```bash
       python3 manage.py createsuperuser
     ```
+NB: You should set name, email and password for the superuser, which will be used to log in to the admin panel.
 8. Run the server
     ```bash
       python3 manage.py runserver
